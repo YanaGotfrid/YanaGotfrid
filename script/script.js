@@ -18,6 +18,37 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
+  const headerInner = document.querySelector('.header-inner');
+  const menuToggle = document.querySelector('.menu-toggle');
+  const siteNavigation = document.querySelector('.nav');
+
+  function closeMenu() {
+    if (!headerInner || !menuToggle) return;
+    headerInner.classList.remove('nav-open');
+    menuToggle.setAttribute('aria-expanded', 'false');
+    menuToggle.setAttribute('aria-label', 'Открыть меню');
+  }
+
+  if (headerInner && menuToggle && siteNavigation) {
+    menuToggle.addEventListener('click', function () {
+      const isOpen = headerInner.classList.toggle('nav-open');
+      menuToggle.setAttribute('aria-expanded', String(isOpen));
+      menuToggle.setAttribute('aria-label', isOpen ? 'Закрыть меню' : 'Открыть меню');
+    });
+
+    siteNavigation.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', closeMenu);
+    });
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') closeMenu();
+    });
+
+    window.matchMedia('(min-width: 1181px)').addEventListener('change', function (event) {
+      if (event.matches) closeMenu();
+    });
+  }
+
   const slider = document.querySelector('[data-slider]');
   if (!slider) return;
 
