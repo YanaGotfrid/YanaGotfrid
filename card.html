@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Торт «Ягодное облако» — Сладкая мастерская</title>
+  <link rel="stylesheet" href="../styles/style.css">
+  <script defer src="../script/script.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="logo" href="catalog.html">
+        <img class="logo-mark-img icon-dark" src="../media/иконки/логотип.png" alt="Логотип">
+        <span>
+          <span class="logo-title">Сладкая Мастерская</span>
+          <span class="logo-subtitle">авторские торты и выпечка</span>
+        </span>
+      </a>
+      <nav class="nav">
+        <a href="catalog.html">Каталог</a>
+        <a href="card.html">Торты на заказ</a>
+        <a href="#">Доставка и оплата</a>
+        <a href="#">О нас</a>
+        <a href="#">Контакты</a>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" type="button">🌙 Тёмная</button>
+        <button class="icon-button" type="button" aria-label="Поиск"><img class="icon-img icon-dark" src="../media/иконки/поиск.png" alt=""></button>
+        <button class="icon-button" type="button" aria-label="Избранное"><img class="icon-img icon-dark" src="../media/иконки/сердце.png" alt=""><span class="badge">3</span></button>
+        <button class="icon-button" type="button" aria-label="Корзина"><img class="icon-img icon-dark" src="../media/иконки/корзина.png" alt=""><span class="badge">2</span></button>
+        <a class="cabinet" href="orders.html"><img class="cabinet-icon icon-dark" src="../media/иконки/пользователь.png" alt=""> Мой кабинет <img class="down-icon icon-dark" src="../media/иконки/стрелка-вниз.png" alt=""></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="breadcrumbs">
+      <span>Главная</span><span>/</span><span>Каталог</span><span>/</span><span>Торт «Ягодное облако»</span>
+    </div>
+
+    <section class="product-detail">
+      <div class="gallery" data-slider>
+        <div class="gallery-main">
+          <img class="slider-image" src="../media/слайд-ягодное-облако-1.png" alt="Торт Ягодное облако">
+          <span class="hit-label">Хит продаж</span>
+          <button class="gallery-favorite" type="button" aria-label="Добавить в избранное"><img class="heart-card-icon icon-dark" src="../media/иконки/сердце-карточка.png" alt=""></button>
+        </div>
+        <div class="thumbs">
+          <button class="arrow-btn slider-prev" type="button" aria-label="Предыдущее фото"><img class="arrow-icon icon-dark" src="../media/иконки/стрелка-влево.png" alt=""></button>
+          <button class="thumb active" type="button" data-image="../media/слайд-ягодное-облако-1.png" data-alt="Торт Ягодное облако"><img src="../media/миниатюра-ягодное-облако-1.png" alt="Миниатюра торта"></button>
+          <button class="thumb" type="button" data-image="../media/слайд-ягодное-облако-3.png" data-alt="Торт Ягодное облако в разрезе"><img src="../media/миниатюра-ягодное-облако-3.png" alt="Миниатюра торта"></button>
+          <button class="thumb" type="button" data-image="../media/слайд-ягодное-облако-2.png" data-alt="Чизкейк Классический"><img src="../media/миниатюра-ягодное-облако-2.png" alt="Миниатюра десерта"></button>
+          <button class="thumb" type="button" data-image="../media/слайд-ягодное-облако-4.png" data-alt="Торт Морковный"><img src="../media/миниатюра-ягодное-облако-4.png" alt="Миниатюра торта"></button>
+          <button class="arrow-btn slider-next" type="button" aria-label="Следующее фото"><img class="arrow-icon icon-dark" src="../media/иконки/стрелка-вправо.png" alt=""></button>
+        </div>
+      </div>
+
+      <article class="product-info">
+        <h1>Торт «Ягодное облако»</h1>
+        <h3>от 1 600 ₽ / кг</h3>
+        <p class="muted">Лёгкий бисквит, нежный крем-чиз и ягодное компоте из клубники, малины и черники. Идеальное сочетание вкуса и свежести для любого праздника.</p>
+        <div class="rating"><img class="inline-icon" src="../media/иконки/звезда.png" alt=""><span>4.9</span><span class="muted">128 отзывов</span></div>
+        <div class="stock"><img class="inline-icon" src="../media/иконки/галочка.png" alt=""><span>Есть в наличии</span></div>
+        <div class="features">
+          <div class="feature"><img class="feature-icon-img icon-dark" src="../media/иконки/лист.png" alt="">Натуральные ингредиенты</div>
+          <div class="feature"><img class="feature-icon-img icon-dark" src="../media/иконки/кекс.png" alt="">Свежая выпечка</div>
+          <div class="feature"><img class="feature-icon-img icon-dark" src="../media/иконки/ручная-работа.png" alt="">Ручная работа</div>
+          <div class="feature"><img class="feature-icon-img icon-dark" src="../media/иконки/доставка.png" alt="">Доставка по городу</div>
+        </div>
+        <div class="notice"><img class="notice-icon icon-dark" src="../media/иконки/информация.png" alt=""> Нестандартные изменения рецептуры согласовываются с пекарем.</div>
+      </article>
+
+      <aside class="order-settings">
+        <h2>Настройка заказа</h2>
+        <div class="settings-row">
+        <div class="option-group">
+          <span class="option-title">Вес</span>
+          <div class="option-line">
+            <button class="choice active" type="button">1 кг</button>
+            <button class="choice" type="button">1,5 кг</button>
+            <button class="choice" type="button">2 кг</button>
+          </div>
+        </div>
+        <div class="option-group">
+          <span class="option-title">Начинка</span>
+          <div class="option-line">
+            <button class="choice active" type="button">Ягодная</button>
+            <button class="choice" type="button">Шоколадная</button>
+            <button class="choice" type="button">Крем-чиз</button>
+          </div>
+        </div>
+        </div>
+        <div class="option-group">
+          <span class="option-title">Изменение рецептуры</span>
+          <div class="option-line">
+            <label class="filter-line"><input type="checkbox"> Уменьшить сладость</label>
+            <label class="filter-line"><input type="checkbox"> Добавить ягоды</label>
+          </div>
+        </div>
+        <div class="option-group">
+          <span class="option-title">Комментарий к заказу</span>
+          <textarea placeholder="Пожелания по оформлению, надписи, особые просьбы..."></textarea>
+        </div>
+        <div class="order-summary">
+          <div>
+            <span class="muted">Итоговая цена</span>
+            <strong>1 600 ₽</strong>
+            <span class="muted">за 1 кг</span>
+          </div>
+          <div>
+            <span class="muted">Срок изготовления</span>
+            <strong>1-2 дня</strong>
+            <span class="muted">после согласования</span>
+          </div>
+          <div>
+            <span class="muted">Статус согласования</span>
+            <strong>Требуется при нестандартных изменениях</strong>
+          </div>
+        </div>
+        <div class="form-actions">
+          <a class="button" href="order-agreement.html">Оформить заказ</a>
+          <a class="outline-button" href="#"><img class="button-icon icon-dark" src="../media/иконки/сердце.png" alt=""> Добавить в избранное</a>
+          <a class="ghost-button" href="catalog.html">Назад в каталог</a>
+        </div>
+      </aside>
+    </section>
+  </main>
+</body>
+</html>

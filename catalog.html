@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог — Сладкая мастерская</title>
+  <link rel="stylesheet" href="../styles/style.css">
+  <script defer src="../script/script.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="logo" href="catalog.html">
+        <img class="logo-mark-img icon-dark" src="../media/иконки/логотип.png" alt="Логотип">
+        <span>
+          <span class="logo-title">Сладкая Мастерская</span>
+          <span class="logo-subtitle">авторские торты и выпечка</span>
+        </span>
+      </a>
+      <nav class="nav">
+        <a href="catalog.html">Каталог</a>
+        <a href="card.html">Торты на заказ</a>
+        <a href="#">Доставка и оплата</a>
+        <a href="#">О нас</a>
+        <a href="#">Контакты</a>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" type="button">🌙 Тёмная</button>
+        <button class="icon-button" type="button" aria-label="Поиск"><img class="icon-img icon-dark" src="../media/иконки/поиск.png" alt=""></button>
+        <button class="icon-button" type="button" aria-label="Избранное"><img class="icon-img icon-dark" src="../media/иконки/сердце.png" alt=""><span class="badge">3</span></button>
+        <button class="icon-button" type="button" aria-label="Корзина"><img class="icon-img icon-dark" src="../media/иконки/корзина.png" alt=""><span class="badge">2</span></button>
+        <a class="cabinet" href="orders.html"><img class="cabinet-icon icon-dark" src="../media/иконки/пользователь.png" alt=""> Мой кабинет <img class="down-icon icon-dark" src="../media/иконки/стрелка-вниз.png" alt=""></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="breadcrumbs">
+      <span>Главная</span><span>/</span><span>Каталог</span>
+    </div>
+
+    <div class="page-title-row catalog-title-row">
+      <h1>Каталог изделий</h1>
+      <div class="catalog-tools">
+          <label class="search-field">
+            <input type="text" placeholder="Поиск изделий...">
+            <img class="field-icon icon-dark" src="../media/иконки/поиск.png" alt="">
+          </label>
+          <select class="sort-select">
+            <option>Сортировка: Популярные</option>
+            <option>Сначала дешевле</option>
+            <option>Сначала дороже</option>
+          </select>
+        </div>
+    </div>
+
+    <div class="catalog-layout">
+      <aside class="sidebar">
+        <div class="sidebar-top">
+          <h3>Фильтры</h3>
+          <a class="reset" href="#">Сбросить все</a>
+        </div>
+        <div class="filter-block">
+          <span class="filter-title">Категории</span>
+          <label class="filter-line"><input type="checkbox" checked> Торты</label>
+          <label class="filter-line"><input type="checkbox"> Пироги</label>
+          <label class="filter-line"><input type="checkbox"> Капкейки</label>
+          <label class="filter-line"><input type="checkbox"> Печенье</label>
+          <label class="filter-line"><input type="checkbox"> Десерты</label>
+        </div>
+        <div class="filter-block">
+          <span class="filter-title">Вес</span>
+          <select>
+            <option>Любой</option>
+            <option>до 1 кг</option>
+            <option>1–2 кг</option>
+            <option>от 2 кг</option>
+          </select>
+        </div>
+      </aside>
+
+      <section class="main-content">
+        <div class="product-list">
+          <article class="product-card">
+            <img src="../media/шоколадный-бархат.png" alt="Торт Шоколадный бархат">
+            <div class="product-card-body">
+              <h3>Торт «Шоколадный бархат»</h3>
+              <p class="muted">от 1 500 ₽/кг</p>
+              <div class="product-actions">
+                <a class="ghost-button" href="card.html">Подробнее</a>
+                <a class="button" href="card.html">Заказать</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="../media/ягодное-облако.png" alt="Торт Ягодное облако">
+            <div class="product-card-body">
+              <h3>Торт «Ягодное облако»</h3>
+              <p class="muted">от 1 600 ₽/кг</p>
+              <div class="product-actions">
+                <a class="ghost-button" href="card.html">Подробнее</a>
+                <a class="button" href="card.html">Заказать</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="../media/медовик.png" alt="Торт Медовик">
+            <div class="product-card-body">
+              <h3>Торт «Медовик»</h3>
+              <p class="muted">от 1 250 ₽/кг</p>
+              <div class="product-actions">
+                <a class="ghost-button" href="card.html">Подробнее</a>
+                <a class="button" href="card.html">Заказать</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="../media/ванильные-капкейки.png" alt="Капкейки Ванильные">
+            <div class="product-card-body">
+              <h3>Капкейки «Ванильные»</h3>
+              <p class="muted">от 120 ₽/шт</p>
+              <div class="product-actions">
+                <a class="ghost-button" href="card.html">Подробнее</a>
+                <a class="button" href="card.html">Заказать</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="../media/яблочный-пирог.png" alt="Пирог Яблочный">
+            <div class="product-card-body">
+              <h3>Пирог «Яблочный»</h3>
+              <p class="muted">от 950 ₽/кг</p>
+              <div class="product-actions">
+                <a class="ghost-button" href="card.html">Подробнее</a>
+                <a class="button" href="card.html">Заказать</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="../media/шоколадное-печенье.png" alt="Печенье Шоколадное">
+            <div class="product-card-body">
+              <h3>Печенье «Шоколадное»</h3>
+              <p class="muted">от 80 ₽/шт</p>
+              <div class="product-actions">
+                <a class="ghost-button" href="card.html">Подробнее</a>
+                <a class="button" href="card.html">Заказать</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="../media/классический-чизкейк.png" alt="Чизкейк Классический">
+            <div class="product-card-body">
+              <h3>Чизкейк «Классический»</h3>
+              <p class="muted">от 1 400 ₽/кг</p>
+              <div class="product-actions">
+                <a class="ghost-button" href="card.html">Подробнее</a>
+                <a class="button" href="card.html">Заказать</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <img src="../media/морковный-торт.png" alt="Торт Морковный">
+            <div class="product-card-body">
+              <h3>Торт «Морковный»</h3>
+              <p class="muted">от 1 300 ₽/кг</p>
+              <div class="product-actions">
+                <a class="ghost-button" href="card.html">Подробнее</a>
+                <a class="button" href="card.html">Заказать</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="catalog-footer">
+          <p class="muted">Показано 1–8 из 24 изделий</p>
+          <div class="pagination">
+            <a class="page-link active" href="#">1</a>
+            <a class="page-link" href="#">2</a>
+            <a class="page-link" href="#">3</a>
+            <a class="page-link" href="#">4</a>
+            <a class="page-link" href="#"><img class="page-icon icon-dark" src="../media/иконки/стрелка-вправо.png" alt="Вперёд"></a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

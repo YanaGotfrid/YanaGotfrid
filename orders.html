@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мои заказы — Сладкая мастерская</title>
+  <link rel="stylesheet" href="../styles/style.css">
+  <script defer src="../script/script.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="logo" href="catalog.html">
+        <img class="logo-mark-img icon-dark" src="../media/иконки/логотип.png" alt="Логотип">
+        <span>
+          <span class="logo-title">Сладкая Мастерская</span>
+          <span class="logo-subtitle">авторские торты и выпечка</span>
+        </span>
+      </a>
+      <nav class="nav">
+        <a href="catalog.html">Каталог</a>
+        <a href="card.html">Торты на заказ</a>
+        <a href="#">Доставка и оплата</a>
+        <a href="#">О нас</a>
+        <a href="#">Контакты</a>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" type="button">🌙 Тёмная</button>
+        <button class="icon-button" type="button" aria-label="Поиск"><img class="icon-img icon-dark" src="../media/иконки/поиск.png" alt=""></button>
+        <button class="icon-button" type="button" aria-label="Избранное"><img class="icon-img icon-dark" src="../media/иконки/сердце.png" alt=""><span class="badge">3</span></button>
+        <button class="icon-button" type="button" aria-label="Корзина"><img class="icon-img icon-dark" src="../media/иконки/корзина.png" alt=""><span class="badge">2</span></button>
+        <a class="cabinet" href="orders.html"><img class="cabinet-icon icon-dark" src="../media/иконки/пользователь.png" alt=""> Мой кабинет <img class="down-icon icon-dark" src="../media/иконки/стрелка-вниз.png" alt=""></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="breadcrumbs">
+      <span>Главная</span><span>/</span><span>Мой кабинет</span><span>/</span><span>Мои заказы</span>
+    </div>
+    <h1>Мои заказы</h1>
+    <p class="muted">История и текущий статус ваших заказов</p>
+
+    <section class="orders-layout">
+      <aside class="account-menu">
+        <a class="account-link" href="#"><img class="account-icon icon-dark" src="../media/иконки/кабинет.png" alt=""> Мой кабинет</a>
+        <a class="account-link active" href="orders.html"><img class="account-icon" src="../media/иконки/мои-заказы.png" alt=""> Мои заказы</a>
+        <a class="account-link exit" href="login.html"><img class="account-icon icon-dark" src="../media/иконки/выход.png" alt=""> Выйти</a>
+      </aside>
+
+      <div class="orders-panel">
+        <article class="order-row">
+          <img src="../media/ягодное-облако.png" alt="Заказ ягодного торта">
+          <div class="order-info">
+            <strong>Заказ #1248</strong>
+            <strong>Торт «Ягодное облако»</strong>
+            <p>2 кг · Ягодный бисквит, крем-чиз, свежие ягоды</p>
+          </div>
+          <div class="order-meta">
+            <div><strong>18 мая 2025, воскресенье</strong><p>16:00 – 18:00</p></div>
+            <div><strong>Самовывоз</strong><p>ул. Ленина, 12, пекарня «Сладкая Мастерская»</p></div>
+          </div>
+          <div class="order-price"><strong>3 400 ₽</strong><p>1 товар</p></div>
+          <div class="order-right">
+            <span class="status orange">На согласовании</span>
+            <a class="small-button" href="order-agreement.html">Перейти к согласованию</a>
+            <a class="ghost-button" href="card.html">Подробнее</a>
+          </div>
+        </article>
+
+        <article class="order-row">
+          <img src="../media/шоколадный-бархат.png" alt="Заказ шоколадного торта">
+          <div class="order-info">
+            <strong>Заказ #1229</strong>
+            <strong>Торт «Шоколадный бархат»</strong>
+            <p>2 кг · Шоколадный бисквит, ганаш, шоколадный декор</p>
+          </div>
+          <div class="order-meta">
+            <div><strong>16 мая 2025, пятница</strong><p>14:00 – 16:00</p></div>
+            <div><strong>Доставка</strong><p>ул. Советская, 45, кв. 12</p></div>
+          </div>
+          <div class="order-price"><strong>2 900 ₽</strong><p>1 товар</p></div>
+          <div class="order-right">
+            <span class="status blue">В работе</span>
+            <a class="small-button" href="card.html">Открыть заказ</a>
+            <a class="ghost-button" href="card.html">Подробнее</a>
+          </div>
+        </article>
+
+        <article class="order-row">
+          <img src="../media/ванильные-капкейки.png" alt="Заказ капкейков">
+          <div class="order-info">
+            <strong>Заказ #1215</strong>
+            <strong>Набор капкейков «Ягодный микс»</strong>
+            <p>6 шт · Ванильные капкейки, крем-чиз, свежие ягоды</p>
+          </div>
+          <div class="order-meta">
+            <div><strong>15 мая 2025, четверг</strong><p>12:00 – 14:00</p></div>
+            <div><strong>Самовывоз</strong><p>ул. Ленина, 12, пекарня «Сладкая Мастерская»</p></div>
+          </div>
+          <div class="order-price"><strong>1 850 ₽</strong><p>1 товар</p></div>
+          <div class="order-right">
+            <span class="status green">Готов</span>
+            <a class="small-button" href="card.html">Открыть заказ</a>
+            <a class="ghost-button" href="card.html">Подробнее</a>
+          </div>
+        </article>
+
+        <article class="order-row">
+          <img src="../media/медовик.png" alt="Заказ медового торта">
+          <div class="order-info">
+            <strong>Заказ #1187</strong>
+            <strong>Торт «Медовая нежность»</strong>
+            <p>1,8 кг · Медовые коржи, сметанный крем, грецкие орехи</p>
+          </div>
+          <div class="order-meta">
+            <div><strong>10 мая 2025, суббота</strong><p>11:00 – 13:00</p></div>
+            <div><strong>Самовывоз</strong><p>ул. Ленина, 12, пекарня «Сладкая Мастерская»</p></div>
+          </div>
+          <div class="order-price"><strong>3 100 ₽</strong><p>1 товар</p></div>
+          <div class="order-right">
+            <span class="status gray">Получен</span>
+            <a class="small-button" href="card.html">Повторить заказ</a>
+            <a class="ghost-button" href="card.html">Подробнее</a>
+          </div>
+        </article>
+
+        <article class="order-row">
+          <img src="../media/яблочный-пирог.png" alt="Заказ пирога">
+          <div class="order-info">
+            <strong>Заказ #1172</strong>
+            <strong>Пирог «Яблоко-корица»</strong>
+            <p>1 кг · Песочное тесто, яблоки, корица, сахар</p>
+          </div>
+          <div class="order-meta">
+            <div><strong>8 мая 2025, четверг</strong><p>15:00 – 17:00</p></div>
+            <div><strong>Доставка</strong><p>ул. Мира, 8, кв. 5</p></div>
+          </div>
+          <div class="order-price"><strong>950 ₽</strong><p>1 товар</p></div>
+          <div class="order-right">
+            <span class="status red">Отменён</span>
+            <a class="ghost-button" href="card.html">Подробнее</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
