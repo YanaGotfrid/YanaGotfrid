@@ -23,9 +23,6 @@
       <nav class="nav" id="site-navigation">
         <a href="index.html">Каталог</a>
         <a href="card.html">Торты на заказ</a>
-        <a href="#">Доставка и оплата</a>
-        <a href="#">О нас</a>
-        <a href="#">Контакты</a>
       </nav>
       <div class="header-actions">
         <button class="theme-toggle" type="button">🌙 Тёмная</button>
@@ -46,13 +43,13 @@
       <h1>Каталог изделий</h1>
       <div class="catalog-tools">
           <label class="search-field">
-            <input type="text" placeholder="Поиск изделий...">
+            <input type="search" data-catalog-search placeholder="Поиск изделий..." aria-label="Поиск изделий">
             <img class="field-icon icon-dark" src="media/иконки/поиск.png" alt="">
           </label>
-          <select class="sort-select">
-            <option>Сортировка: Популярные</option>
-            <option>Сначала дешевле</option>
-            <option>Сначала дороже</option>
+          <select class="sort-select" data-catalog-sort aria-label="Сортировка изделий">
+            <option value="popular">Сортировка: Популярные</option>
+            <option value="price-asc">Сначала дешевле</option>
+            <option value="price-desc">Сначала дороже</option>
           </select>
         </div>
     </div>
@@ -61,30 +58,30 @@
       <aside class="sidebar">
         <div class="sidebar-top">
           <h3>Фильтры</h3>
-          <a class="reset" href="#">Сбросить все</a>
+          <button class="reset" type="button" data-reset-filters>Сбросить все</button>
         </div>
         <div class="filter-block">
           <span class="filter-title">Категории</span>
-          <label class="filter-line"><input type="checkbox" checked> Торты</label>
-          <label class="filter-line"><input type="checkbox"> Пироги</label>
-          <label class="filter-line"><input type="checkbox"> Капкейки</label>
-          <label class="filter-line"><input type="checkbox"> Печенье</label>
-          <label class="filter-line"><input type="checkbox"> Десерты</label>
+          <label class="filter-line"><input type="checkbox" value="cakes" data-filter-category> Торты</label>
+          <label class="filter-line"><input type="checkbox" value="pies" data-filter-category> Пироги</label>
+          <label class="filter-line"><input type="checkbox" value="cupcakes" data-filter-category> Капкейки</label>
+          <label class="filter-line"><input type="checkbox" value="cookies" data-filter-category> Печенье</label>
+          <label class="filter-line"><input type="checkbox" value="desserts" data-filter-category> Десерты</label>
         </div>
         <div class="filter-block">
           <span class="filter-title">Вес</span>
-          <select>
-            <option>Любой</option>
-            <option>до 1 кг</option>
-            <option>1–2 кг</option>
-            <option>от 2 кг</option>
+          <select data-filter-weight aria-label="Фильтр по весу">
+            <option value="any">Любой</option>
+            <option value="under-1">до 1 кг</option>
+            <option value="one-to-two">1–2 кг</option>
+            <option value="over-2">от 2 кг</option>
           </select>
         </div>
       </aside>
 
       <section class="main-content">
-        <div class="product-list">
-          <article class="product-card">
+        <div class="product-list" data-product-list aria-live="polite">
+          <article class="product-card" data-category="cakes" data-weight="2" data-price="1500">
             <img src="media/шоколадный-бархат.png" alt="Торт Шоколадный бархат">
             <div class="product-card-body">
               <h3>Торт «Шоколадный бархат»</h3>
@@ -95,7 +92,7 @@
               </div>
             </div>
           </article>
-          <article class="product-card">
+          <article class="product-card" data-category="cakes" data-weight="1.5" data-price="1600">
             <img src="media/ягодное-облако.png" alt="Торт Ягодное облако">
             <div class="product-card-body">
               <h3>Торт «Ягодное облако»</h3>
@@ -106,7 +103,7 @@
               </div>
             </div>
           </article>
-          <article class="product-card">
+          <article class="product-card" data-category="cakes" data-weight="1" data-price="1250">
             <img src="media/медовик.png" alt="Торт Медовик">
             <div class="product-card-body">
               <h3>Торт «Медовик»</h3>
@@ -117,7 +114,7 @@
               </div>
             </div>
           </article>
-          <article class="product-card">
+          <article class="product-card" data-category="cupcakes" data-weight="0.5" data-price="120">
             <img src="media/ванильные-капкейки.png" alt="Капкейки Ванильные">
             <div class="product-card-body">
               <h3>Капкейки «Ванильные»</h3>
@@ -128,7 +125,7 @@
               </div>
             </div>
           </article>
-          <article class="product-card">
+          <article class="product-card" data-category="pies" data-weight="1" data-price="950">
             <img src="media/яблочный-пирог.png" alt="Пирог Яблочный">
             <div class="product-card-body">
               <h3>Пирог «Яблочный»</h3>
@@ -139,7 +136,7 @@
               </div>
             </div>
           </article>
-          <article class="product-card">
+          <article class="product-card" data-category="cookies" data-weight="0.5" data-price="80">
             <img src="media/шоколадное-печенье.png" alt="Печенье Шоколадное">
             <div class="product-card-body">
               <h3>Печенье «Шоколадное»</h3>
@@ -150,7 +147,7 @@
               </div>
             </div>
           </article>
-          <article class="product-card">
+          <article class="product-card" data-category="desserts" data-weight="1.2" data-price="1400">
             <img src="media/классический-чизкейк.png" alt="Чизкейк Классический">
             <div class="product-card-body">
               <h3>Чизкейк «Классический»</h3>
@@ -161,7 +158,7 @@
               </div>
             </div>
           </article>
-          <article class="product-card">
+          <article class="product-card" data-category="cakes" data-weight="2.5" data-price="1300">
             <img src="media/морковный-торт.png" alt="Торт Морковный">
             <div class="product-card-body">
               <h3>Торт «Морковный»</h3>
@@ -173,16 +170,10 @@
             </div>
           </article>
         </div>
+        <p class="catalog-empty" data-catalog-empty hidden>По выбранным параметрам изделия не найдены.</p>
 
         <div class="catalog-footer">
-          <p class="muted">Показано 1–8 из 24 изделий</p>
-          <div class="pagination">
-            <a class="page-link active" href="#">1</a>
-            <a class="page-link" href="#">2</a>
-            <a class="page-link" href="#">3</a>
-            <a class="page-link" href="#">4</a>
-            <a class="page-link" href="#"><img class="page-icon icon-dark" src="media/иконки/стрелка-вправо.png" alt="Вперёд"></a>
-          </div>
+          <p class="muted" data-catalog-count>Показано 8 из 8 изделий</p>
         </div>
       </section>
     </div>

@@ -217,6 +217,27 @@ h3{
   color: var(--accent);
   font-size: 14px;
   font-weight: 700;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  font-family: inherit;
+}
+.reset:hover,
+.reset:focus-visible{
+  text-decoration: underline;
+}
+.product-card.is-hidden{
+  display: none;
+}
+.catalog-empty{
+  margin: 26px 0;
+  padding: 20px;
+  border: 1px dashed var(--line);
+  border-radius: 14px;
+  background: var(--surface);
+  color: var(--muted);
+  text-align: center;
 }
 .filter-block{
   padding: 16px 0;
